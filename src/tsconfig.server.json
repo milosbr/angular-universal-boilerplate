@@ -1,0 +1,20 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "commonjs",
+    "typeRoots": ["../node_modules/@types"]
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "**/*.e2e-spec.ts",
+    "**/*.stubs.ts",
+    "**/*.stub.ts"
+ ],
+  "angularCompilerOptions": {
+    "entryModule": "app/app.server.module#AppServerModule"
+  },
+  "types": ["node"]
+}

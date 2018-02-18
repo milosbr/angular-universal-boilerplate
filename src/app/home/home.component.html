@@ -1,0 +1,15 @@
+<div style="text-align:center">
+  <h2>
+    {{'home.title' | translate}}
+  </h2>
+  <ng-container *ngIf="platform.browser;else serverTitle">
+    <h3>
+      CLIENT
+    </h3>
+  </ng-container>
+  <ng-template #serverTitle>
+    <h3>
+      SERVER
+    </h3>
+  </ng-template>
+</div>
