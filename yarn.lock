@@ -3998,7 +3998,7 @@ karma-coverage-istanbul-reporter@1.4.1:
     istanbul-api "^1.1.14"
     minimatch "^3.0.4"
 
-karma-coverage@^1.1.1:
+karma-coverage@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/karma-coverage/-/karma-coverage-1.1.1.tgz#5aff8b39cf6994dc22de4c84362c76001b637cf6"
   dependencies:

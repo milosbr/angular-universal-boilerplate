@@ -57,7 +57,7 @@ export class TranslateServiceStub {
     return this.setLang$.pipe(
       switchMap((val) => {
         return Observable.create( observer => {
-          observer.next({ lang: this.setLang, translations: translations[this.setLang] });
+          observer.next({ lang: val, translations: translations[this.setLang] });
           observer.complete();
         });
       })

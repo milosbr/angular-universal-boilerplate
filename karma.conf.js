@@ -48,6 +48,7 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     browserNoActivityTimeout: 30000,
-    singleRun: false
+    singleRun: false,
+    webpack: { node: { fs: 'empty' } }
   });
 };

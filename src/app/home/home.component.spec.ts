@@ -45,15 +45,4 @@ describe('HomeComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h2').textContent).toContain('Home Page');
   }));
-  it('should render title in different language', async(() => {
-    const fixture = TestBed.createComponent(HomeComponent);
-    fixture.detectChanges();
-    let compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h2').textContent).toContain('Home Page');
-    translate.use('sr-CS');
-    fixture.detectChanges();
-    compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h2').textContent).toContain('Pocetna strana');
-  }));
-
 });
